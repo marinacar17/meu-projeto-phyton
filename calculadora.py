@@ -5,6 +5,11 @@ def menu():
     print('Qual operação deseja executar?')
     print('1 - Soma', '2 - Subtração', '3 - Multilpicação', '4 - Divisão', '5 - Sair', sep='\n')
     oper = input('Escolha a operação: ')
+    if  oper == '5':
+        print("Operação realizada! Calculadora encerrada!")
+    return
+
+else:
     a = float(input("Digite um número: "))
     b = float(input("Digite um segundo número: " ))
 
@@ -24,10 +29,8 @@ def menu():
         dividir(a,b)
         divisao = dividir(a,b)
         print(divisao)
-    elif oper == '5':
-        print("Operação realizada! Calculadora encerrada!")
+   
        
     else:
         print("Erro! Escolha fora das opções disponíveis")
-        
 menu()
