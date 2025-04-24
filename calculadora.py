@@ -8,8 +8,7 @@ def menu():
     if  oper == '5':
         print("Operação realizada! Calculadora encerrada!")
     return
-
-else:
+elif:
     a = float(input("Digite um número: "))
     b = float(input("Digite um segundo número: " ))
 
