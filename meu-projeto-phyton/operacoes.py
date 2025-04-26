@@ -13,6 +13,3 @@ def dividir(a,b):
     else:
         print("Não existe divisão por zero!")
         return
-
-
-
