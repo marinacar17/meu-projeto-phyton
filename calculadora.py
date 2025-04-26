@@ -30,6 +30,12 @@ def menu():
        
         else:
             print("Erro! Escolha fora das opções disponíveis")
+        
+        continuar = input("Quer continuar a calcular? (s/n): ")
+        if continuar == "s":
+            menu()
+        else:
+            print("Calculadora finalizada!")
 
 menu()
 
