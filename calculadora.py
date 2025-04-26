@@ -33,7 +33,7 @@ def menu():
         
         continuar = input("Quer continuar a calcular? (s/n): ")
         if continuar == "s":
-            menu()
+           return menu()
         else:
             print("Calculadora finalizada!")
 
