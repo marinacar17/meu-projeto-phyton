@@ -1,12 +1,12 @@
 class Cliente:
-    def _init_(self, nome, sobrenome, email, endereco, senha):
+    def __init__(self, nome, sobrenome, email, endereco, senha):
         self.nome = nome
         self.sobrenome = sobrenome
         self.email = email
         self.endereco = endereco
         self.senha = senha
 
-    def _str_(self):
+    def __str__(self):
         return f"""
 Nome: {self.nome}
 Sobrenome: {self.sobrenome}
@@ -15,13 +15,13 @@ Endereço: {self.endereco}
 """
 
 class Produto:
-    def _init_(self, nome, tipo, tamanho, preco):
+    def __init__(self, nome, tipo, tamanho, preco):
         self.nome = nome
         self.tipo = tipo
         self.tamanho = tamanho
         self.preco = preco
 
-    def _str_(self):
+    def __str__(self):
         return f"""
 Produto: {self.nome}
 Tipo: {self.tipo}
@@ -30,7 +30,7 @@ Preço: R${self.preco:.2f}
 """
 
 class Cafeteria:
-    def _init_(self, nome, endereco, cnpj):
+    def __init__(self, nome, endereco, cnpj):
         self.nome = nome
         self.endereco = endereco
         self.cnpj = cnpj
