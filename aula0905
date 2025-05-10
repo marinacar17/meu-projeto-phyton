@@ -1,0 +1,53 @@
+
+class Cliente():
+    def __init__(self, nome, sobrenome, email, endereco, senha):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.email = email
+        self.endereco = endereco
+        self.senha = senha
+
+    def __str__(self):
+        return f"""
+        Nome: {self.nome}
+        Sobrenome: {self.sobrenome}
+        Email: {self.email}
+        """
+
+
+
+class Produto():
+    def __init__(self, nome, tipo, tamanho, preco):
+        self.nome = nome
+        self.tipo = tipo
+        self.tamanho = tamanho
+        self.preco 
+
+
+class Cafeteria():
+    def __init__(self, nome, endereco, cnpj):
+        self.nome = nome
+        self.endereco = endereco
+        self.cnpj = cnpj
+        self.clientes = []
+
+    def cadastrar_cliente(self):
+        cliente_nome = input('Digite seu nome')
+        cliente_sobrenome = input('Digite seu sobrenome')
+        cliente_endereco = input('Digite seu endereço')
+        cliente_email = input('Digite seu e-mail')
+        cliente_senha = input('Digite sua senha')
+
+        cliente = Cliente(cliente_nome, cliente_sobrenome, cliente_endereco, cliente_email, cliente_senha)
+
+        print(f'Cliente {cliente_nome} cadastrado com sucesso!')
+        return cliente
+
+    def cadastrar_produto(self):
+        produto_nome = input('Digite o nome do produto')
+        produto_tipo = input('Digite o tipo de produto')
+        produto_tamanho = input("Quais os tamanhos existentes do produto")
+        produto_preço = input("Preço do produto")
+        produto = Produto(produto_nome, produto_tipo, produto_tamanho, produto_preço)
+        print(f"{produto_nome} cadastrado com sucesso!")
+        return produto 
